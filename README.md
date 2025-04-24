@@ -552,7 +552,7 @@ LIMIT 3;                                       -- Limiting the output to top 3 e
 
 **Task 18: Identify Members Issuing High-Risk Books**  
 Write a query to identify members who have issued books more than twice with the status "damaged" in the books table. Display the member name, book title, and the number of times they've issued damaged books.    
-'''sql
+---sql
 
 SELECT 
     m.member_name AS Member_Name,           -- Name of the member
@@ -575,8 +575,7 @@ HAVING
 ORDER BY 
     Times_Issued DESC;                      -- Sorting by the number of times books were issued (descending)
 
-
-'''
+---
 
 **Task 19: Stored Procedure**
 Objective:
@@ -659,7 +658,7 @@ Description: Write a CTAS query to create a new table that lists each member and
     Number of overdue books
     Total fines
 
-'''sql
+---sql
 
 CREATE TABLE overdue_books_fines AS
 SELECT 
@@ -685,7 +684,7 @@ ORDER BY
 SELECT * 
 FROM overdue_books_fines;
 
-'''
+---
 
 
 
